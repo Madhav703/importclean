@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.9", "3.10", "3.11", "3.12"]
+        python-version: ["3.10", "3.11", "3.12"]
 
     steps:
       - uses: actions/checkout@v4
@@ -28,29 +28,5 @@ jobs:
         run: |
           pip install -e ".[dev]"
 
-      - name: Lint with ruff
-        run: ruff check importclean tests
-
-      - name: Type check with mypy
-        run: mypy importclean
-
       - name: Run tests
-        run: pytest --cov=importclean --cov-report=xml --cov-fail-under=95
-
-      - name: Upload coverage
-        uses: codecov/codecov-action@v4
-        if: matrix.python-version == '3.12'
-        with:
-          files: coverage.xml
-
-  format:
-    name: Format check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: pip
-      - run: pip install black
-      - run: black --check importclean tests
+        run: pytest

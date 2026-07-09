@@ -5,8 +5,8 @@
 [![PyPI](https://img.shields.io/pypi/v/importclean)](https://pypi.org/project/importclean/)
 [![Python](https://img.shields.io/pypi/pyversions/importclean)](https://pypi.org/project/importclean/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![CI](https://github.com/importclean/importclean/actions/workflows/ci.yml/badge.svg)](https://github.com/importclean/importclean/actions/workflows/ci.yml)
-[![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen)](https://github.com/importclean/importclean)
+[![CI](https://github.com/Madhav703/importclean/actions/workflows/ci.yml/badge.svg)](https://github.com/Madhav703/importclean/actions/workflows/ci.yml)
+[![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen)](https://github.com/Madhav703/importclean)
 
 
 ## Features

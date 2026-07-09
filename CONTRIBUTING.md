@@ -7,7 +7,7 @@ Thank you for your interest in contributing! This document covers how to set up 
 ## Development Setup
 
 ```bash
-git clone https://github.com/importclean/importclean
+git clone https://github.com/Madhav703/importclean
 cd importclean
 python -m venv .venv
 source .venv/bin/activate

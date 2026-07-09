@@ -52,7 +52,7 @@ importclean = "importclean.cli:main"
 Homepage = "https://github.com/Madhav703/importclean"
 Repository = "https://github.com/Madhav703/importclean"
 "Bug Tracker" = "https://github.com/Madhav703/importclean/issues"
-Changelog = "https://github.com/importclean/importclean/blob/main/CHANGELOG.md"
+Changelog = "https://github.com/Madhav703/importclean/blob/main/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["."]

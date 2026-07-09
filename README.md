@@ -8,7 +8,6 @@
 [![CI](https://github.com/importclean/importclean/actions/workflows/ci.yml/badge.svg)](https://github.com/importclean/importclean/actions/workflows/ci.yml)
 [![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen)](https://github.com/importclean/importclean)
 
----
 
 ## Features
 
@@ -26,7 +25,6 @@
 - **Plugin system** — add custom rules for project-specific policies
 - **`.importclean.toml`** configuration
 
----
 
 ## Installation
 
@@ -42,7 +40,6 @@ cd importclean
 pip install -e ".[dev]"
 ```
 
----
 
 ## Quick Start
 
@@ -101,7 +98,6 @@ file_report = clean_file("src/mymodule.py", dry_run=False)
 print(f"Removed {len(file_report.unused)} unused imports")
 ```
 
----
 
 ## Configuration
 
@@ -120,7 +116,6 @@ remove_unused  = true
 workers        = 4
 ```
 
----
 
 ## Safety Guarantees
 
@@ -136,7 +131,6 @@ importclean will **never**:
 
 If post-clean validation fails, the original file is restored automatically and the error is reported.
 
----
 
 ## What Gets Removed
 
@@ -151,7 +145,6 @@ If post-clean validation fails, the original file is restored automatically and 
 | `if TYPE_CHECKING: from x import T` | **Never removed** |
 | `try: import ujson as json` | **Never removed** |
 
----
 
 ## Plugin System
 
@@ -181,7 +174,6 @@ registry.register(NoPickleRule)
 report = clean_project(".", dry_run=True, registry=registry)
 ```
 
----
 
 ## Development
 
@@ -202,7 +194,6 @@ mypy importclean
 black importclean tests
 ```
 
----
 
 ## License
 

@@ -11,18 +11,18 @@
 
 ## Features
 
-- **AST + LibCST analysis** — detects every import variant without reformatting unrelated code
-- **Safe by default** — never removes conditional, `TYPE_CHECKING`, `try/except`, or star imports
-- **Partial cleanup** — removes only unused names from `from x import a, b, c`
-- **Alias detection** — `import numpy as np` is kept when `np` is used
-- **Duplicate removal** — collapses repeated identical import statements
-- **Circular import detection** — finds cycles across the whole project
-- **Dependency graph** — renders ASCII trees and Graphviz `.dot` files
-- **Heavy import suggestions** — recommends lazy imports for expensive modules
-- **Import sorting** — PEP 8 / isort-compatible grouping
-- **Post-clean validation** — every modified file is re-parsed and compiled; originals are restored on failure
-- **Multiprocessing** — scales to thousands of files
-- **Plugin system** — add custom rules for project-specific policies
+- **AST + LibCST analysis** - detects every import variant without reformatting unrelated code
+- **Safe by default** - never removes conditional, `TYPE_CHECKING`, `try/except`, or star imports
+- **Partial cleanup** - removes only unused names from `from x import a, b, c`
+- **Alias detection** - `import numpy as np` is kept when `np` is used
+- **Duplicate removal** - collapses repeated identical import statements
+- **Circular import detection** - finds cycles across the whole project
+- **Dependency graph** - renders ASCII trees and Graphviz `.dot` files
+- **Heavy import suggestions** - recommends lazy imports for expensive modules
+- **Import sorting** - PEP 8 / isort-compatible grouping
+- **Post-clean validation** - every modified file is re-parsed and compiled; originals are restored on failure
+- **Multiprocessing** - scales to thousands of files
+- **Plugin system** - add custom rules for project-specific policies
 - **`.importclean.toml`** configuration
 
 
